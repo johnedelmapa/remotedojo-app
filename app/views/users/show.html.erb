@@ -1,0 +1,28 @@
+<% provide(:title, @user.name)%>
+<div class="row mt-4">
+    <div class="col-4">
+        <div class="card">
+            <div class="card-header">
+                User Information
+            </div>
+            <div class="card-body text-center">
+                <%= profile_image(@user, "profile-medium")%>
+                <h5><%= @user.name%></h5>
+                <p><%= @user.email %></p>
+                <%= render "follow_form"%>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-8">
+        <div class="card">
+            <div class="card-header">
+                Activity Feeds
+            </div>
+            <div class="card-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+
