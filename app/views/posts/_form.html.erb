@@ -1,0 +1,13 @@
+<%= form_with(model: @post, local: true) do |f| %>
+    <%= render 'shared/error_messages', object: f.object%>
+    <div class="mb-1">
+        <%= f.text_area :content, size:"20x5", class: "form-control", placeholder: "Share your thoughts..."%>
+    </div>
+
+    <div clas="mb-3">
+         <%= f.check_box :is_private, class: "d-inline" %>
+         <p class="d-inline">Make this private</p>
+    </div>
+    
+    <%= f.submit btn_msg, class: "btn btn-primary w-100 mt-2"%>
+<% end %>
