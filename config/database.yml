@@ -13,7 +13,7 @@ development:
 
 production:
   adapter: postgresql
-  database: emotedojo_app_production
+  database: remotedojo_app_production
   pool: 5
   timeout: 5000
 
