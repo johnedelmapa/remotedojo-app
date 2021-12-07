@@ -12,5 +12,8 @@ development:
   database: remotedojo_app_development
 
 production:
-  <<: *default
-  database: remotedojo_app_production
+  adapter: postgresql
+  database: emotedojo_app_production
+  pool: 5
+  timeout: 5000
+
